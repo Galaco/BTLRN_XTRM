@@ -1,0 +1,132 @@
+# LLD Format (LittleLevelData)
+# Joshua Martin 2012
+
+# header information
+count 106
+resource/materials/levels/2.png
+
+# level variables
+maxx 760
+maxy 760
+
+# locatable objects
+player 2 2
+exit 9 1 
+
+# dynamic objects
+jewel 7 1 0 resource/models/jewel/jewel_square.obj resource/materials/models/tex_jewel.raw
+jewel 8 4 0 resource/models/jewel/jewel_square.obj resource/materials/models/tex_jewel.raw
+jewel 2 5 0 resource/models/jewel/jewel_square.obj resource/materials/models/tex_jewel.raw
+jewel 8 6 0 resource/models/jewel/jewel_square.obj resource/materials/models/tex_jewel.raw
+jewel 3 7 0 resource/models/jewel/jewel_square.obj resource/materials/models/tex_jewel.raw
+jewel 4 11 0 resource/models/jewel/jewel_square.obj resource/materials/models/tex_jewel.raw
+jewel 6 11 0 resource/models/jewel/jewel_square.obj resource/materials/models/tex_jewel.raw
+jewel 8 11 0 resource/models/jewel/jewel_square.obj resource/materials/models/tex_jewel.raw
+beetle 6 7 3 6
+key 1 5
+door 10 11
+breakable 11 8
+breakable 11 6
+breakable 11 4
+
+# static objects
+wall 6 2 n resource/models/cube/cube_64x32u.obj resource/materials/models/colours/off_white.raw
+wall 7 2 n resource/models/cube/cube_64x32u.obj resource/materials/models/colours/off_white.raw
+wall 1 4 n resource/models/cube/cube_64x32u.obj resource/materials/models/colours/off_white.raw
+wall 2 4 n resource/models/cube/cube_64x32u.obj resource/materials/models/colours/off_white.raw
+wall 7 5 f resource/models/cube/cube_64x32u.obj resource/materials/models/colours/orange_translucent.raw
+wall 8 5 n resource/models/cube/cube_64x32u.obj resource/materials/models/colours/off_white.raw
+wall 9 5 p resource/models/cube/cube_64x32u.obj resource/materials/models/colours/purple_translucent.raw
+wall 3 6 n resource/models/cube/cube_64x32u.obj resource/materials/models/colours/off_white.raw
+wall 4 6 n resource/models/cube/cube_64x32u.obj resource/materials/models/colours/off_white.raw
+wall 5 6 n resource/models/cube/cube_64x32u.obj resource/materials/models/colours/off_white.raw
+wall 6 6 n resource/models/cube/cube_64x32u.obj resource/materials/models/colours/off_white.raw
+wall 2 8 n resource/models/cube/cube_64x32u.obj resource/materials/models/colours/off_white.raw
+wall 3 8 p resource/models/cube/cube_64x32u.obj resource/materials/models/colours/purple_translucent.raw
+wall 0 9 n resource/models/cube/cube_64x32u.obj resource/materials/models/colours/off_white.raw
+wall 1 9 n resource/models/cube/cube_64x32u.obj resource/materials/models/colours/off_white.raw
+wall 3 10 n resource/models/cube/cube_64x32u.obj resource/materials/models/colours/off_white.raw
+wall 4 10 n resource/models/cube/cube_64x32u.obj resource/materials/models/colours/off_white.raw
+wall 5 10 n resource/models/cube/cube_64x32u.obj resource/materials/models/colours/off_white.raw
+wall 6 10 f resource/models/cube/cube_64x32u.obj resource/materials/models/colours/orange_translucent.raw
+wall 7 10 n resource/models/cube/cube_64x32u.obj resource/materials/models/colours/off_white.raw
+wall 8 10 n resource/models/cube/cube_64x32u.obj resource/materials/models/colours/off_white.raw
+wall 9 10 n resource/models/cube/cube_64x32u.obj resource/materials/models/colours/off_white.raw
+wall 10 10 n resource/models/cube/cube_64x32u.obj resource/materials/models/colours/off_white.raw
+wall 10 12 n resource/models/cube/cube_64x32d.obj resource/materials/models/colours/off_white.raw
+wall 7 9 n resource/models/cube/cube_64x64.obj resource/materials/models/colours/off_white.raw
+wall 8 9 n resource/models/cube/cube_64x64.obj resource/materials/models/colours/off_white.raw
+wall 9 9 n resource/models/cube/cube_64x64.obj resource/materials/models/colours/off_white.raw
+wall 8 0 n resource/models/cube/cube_64x64.obj resource/materials/models/colours/off_white.raw
+wall 8 1 n resource/models/cube/cube_64x64.obj resource/materials/models/colours/off_white.raw
+wall 8 2 n resource/models/cube/cube_64x64.obj resource/materials/models/colours/off_white.raw
+wall 9 2 n resource/models/cube/cube_64x64.obj resource/materials/models/colours/off_white.raw
+wall 10 2 n resource/models/cube/cube_64x64.obj resource/materials/models/colours/off_white.raw
+wall 10 3 n resource/models/cube/cube_64x64.obj resource/materials/models/colours/off_white.raw
+wall 10 4 n resource/models/cube/cube_64x64.obj resource/materials/models/colours/off_white.raw
+wall 10 5 n resource/models/cube/cube_64x64.obj resource/materials/models/colours/off_white.raw
+wall 10 6 n resource/models/cube/cube_64x64.obj resource/materials/models/colours/off_white.raw
+wall 10 7 n resource/models/cube/cube_64x64.obj resource/materials/models/colours/off_white.raw
+wall 10 8 n resource/models/cube/cube_64x64.obj resource/materials/models/colours/off_white.raw
+wall 10 9 n resource/models/cube/cube_64x64.obj resource/materials/models/colours/off_white.raw
+wall 10 12 n resource/models/cube/cube_64x64.obj resource/materials/models/colours/off_white.raw
+wall 10 13 n resource/models/cube/cube_64x64.obj resource/materials/models/colours/off_white.raw
+
+# environment objects
+prop -96 -64 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop -32 -64 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 32 -64 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 96 -64 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 160 -64 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 224 -64 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 288 -64 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 352 -64 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 416 -64 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 480 -64 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 544 -64 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 608 -64 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 672 -64 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 736 -64 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 800 -64 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop -32 832 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 32 832 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 96 832 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 160 832 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 224 832 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 288 832 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 352 832 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 416 832 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 480 832 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 544 832 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 608 832 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 672 832 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 736 832 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 800 832 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop -32 0 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop -32 64 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop -32 128 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop -32 192 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop -32 256 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop -32 320 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop -32 384 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop -32 448 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop -32 512 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop -32 576 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop -32 640 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop -32 704 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop -32 768 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 800 0 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 800 64 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 800 128 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 800 192 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 800 256 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 800 320 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 800 384 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 800 448 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 800 512 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 800 576 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 800 640 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 800 704 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 800 768 -40 resource/models/cube/cube_64x64.obj resource/materials/models/cube/off_white.raw
+prop 608 640 -16 resource/models/env/sign.obj resource/materials/models/env/sign_keyx1.raw
+prop 736 640 -16 resource/models/env/board.obj resource/materials/models/env/pound_hint.raw
