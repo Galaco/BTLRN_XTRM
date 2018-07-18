@@ -88,7 +88,7 @@ void Game::getInput()
 		if( state == "inputname" )
 		{
 
-			if( sf::Event::KeyPressed && Event.key.code == sf::Keyboard::Back )
+			if( sf::Event::KeyPressed && Event.key.code == sf::Keyboard::BackSpace )
 				hud.removeChar();
 			else
 			if( Event.type == sf::Event::TextEntered )
@@ -97,11 +97,13 @@ void Game::getInput()
 				}
 		}
 	
-		if( sf::Event::KeyPressed && Event.key.code == sf::Keyboard::Escape )
-			if( state == "play" )
+		if( sf::Event::KeyPressed && Event.key.code == sf::Keyboard::Escape ) {
+			if( state == "play" ) {
 				hud.setState( "mainmenu" );
-			else
+			} else {
 				win->close(); // Escape key : exit	
+			}
+		}
 	}	
 
 	if( state == "mainmenu" )
@@ -121,7 +123,7 @@ void Game::getInput()
 		if ( ( sf::Keyboard::isKeyPressed( sf::Keyboard::Space ) || sf::Keyboard::isKeyPressed( sf::Keyboard::Up ) ) && hud.getHealth() > 4 ) player->jump( 30 );
 		if ( !( sf::Keyboard::isKeyPressed( sf::Keyboard::Left )) && !( sf::Keyboard::isKeyPressed( sf::Keyboard::Right ) ) && !( sf::Keyboard::isKeyPressed( sf::Keyboard::Space ) ) && !( sf::Keyboard::isKeyPressed( sf::Keyboard::Up ) ) && (player->getVelY()<4) ) player->setState( "IDLE" );
 		if ( sf::Keyboard::isKeyPressed( sf::Keyboard::P ) ){ state = "pause"; hud.setState( "pause" ); }
-		if ( sf::Keyboard::isKeyPressed( sf::Keyboard::Left ) || sf::Keyboard::isKeyPressed( sf::Keyboard::Right ) && !sf::Keyboard::isKeyPressed( sf::Keyboard::Up ) && !sf::Keyboard::isKeyPressed( sf::Keyboard::Space ) ) player->setState( "RUN" );
+		if (( sf::Keyboard::isKeyPressed( sf::Keyboard::Left ) || sf::Keyboard::isKeyPressed( sf::Keyboard::Right )) && !sf::Keyboard::isKeyPressed( sf::Keyboard::Up ) && !sf::Keyboard::isKeyPressed( sf::Keyboard::Space ) ) player->setState( "RUN" );
 	}
 
 	if( state == "pause" ) if ( sf::Keyboard::isKeyPressed( sf::Keyboard::R ) ){ hud.setState( "play" ); }
@@ -133,7 +135,7 @@ void Game::getInput()
 			hud.setState( "calculate" );
 	}
 
-	if( state == "scores" ) if ( sf::Keyboard::isKeyPressed( sf::Keyboard::Back ) ) hud.setState( "mainmenu" );
+	if( state == "scores" ) if ( sf::Keyboard::isKeyPressed( sf::Keyboard::BackSpace ) ) hud.setState( "mainmenu" );
 }
 	
 

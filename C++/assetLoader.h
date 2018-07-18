@@ -8,6 +8,10 @@
 #define ASSETLOADER_H
 #include <SFML/Graphics.hpp>
 #include <SFML/OpenGL.hpp>
+#ifdef __APPLE__
+	#include <OpenGL/glu.h>
+	#include <OpenGL/gl.h>
+#endif
 #include <iostream>
 #include <vector>
 #include <string>

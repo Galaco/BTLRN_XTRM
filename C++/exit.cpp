@@ -1,4 +1,4 @@
-#include "Exit.h"
+#include "exit.h"
 
 Exit::Exit(){
 }
