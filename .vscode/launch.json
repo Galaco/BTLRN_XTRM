@@ -8,13 +8,19 @@
             "name": "(lldb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/btlrn.out",
+            "program": "${workspaceFolder}/builds/btlrn.out",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": true,
-            "MIMode": "lldb"
+            "MIMode": "lldb",
+            "windows": {
+                "program": "${workspaceFolder}/builds/btlrn.exe"
+            },
+            "osx": {
+                "program": "${workspaceFolder}/builds/btlrn.out"
+            }
         }
     ]
 }

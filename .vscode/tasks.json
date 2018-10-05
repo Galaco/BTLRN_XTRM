@@ -2,24 +2,52 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build beetle_run",
+            "label": "Mac OS: Build",
             "type": "shell",
             "command": "g++",
             "args": [
-                "-g", 
+                "-g",
                 "C++/*.cpp",
-                "-obtlrn.out",
+                "-obuilds/btlrn.out",
                 "-Iinclude",
-                "-lsfml-graphics", 
-                "-lsfml-window", 
-                "-lsfml-system", 
+                "-lsfml-graphics",
+                "-lsfml-window",
+                "-lsfml-system",
                 "-lsfml-audio",
-                "-framework", "OpenGL"
+                "-framework",
+                "OpenGL"
             ],
             "group": {
                 "kind": "build",
                 "isDefault": true
-            }
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Windows: build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "C++/*.cpp",
+                "-static", 
+                "-static-libgcc",
+                "-static-libstdc++",
+                "-o", "builds/btlrn.exe",
+                "-Ilib/SFML/include",
+                "-Llib/windows/SFML/lib",
+                "-lsfml-graphics",
+                "-lsfml-window",
+                "-lsfml-system",
+                "-lsfml-audio",
+                "-lopengl32",
+                "-lglu32"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
         }
     ]
 }
