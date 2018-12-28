@@ -51,11 +51,11 @@ Hud::Hud(){
 	t_sel.loadFromImage( i_sel );
 	s_sel.setTexture( t_sel );
 	s_bg.setPosition( 0 , 0 );
-	s_lives.setColor( sf::Color( 255 , 255 , 255 ) );
-	s_health.setColor( sf::Color( 255 , 255 , 255 ) );
-	s_time.setColor( sf::Color( 255 , 255 , 255 ) );
-	s_pause.setColor( sf::Color( 255 , 255 , 255 ) );
-	s_keys.setColor( sf::Color( 255 , 255 , 255 ) );
+	s_lives.setFillColor( sf::Color( 255 , 255 , 255 ) );
+	s_health.setFillColor( sf::Color( 255 , 255 , 255 ) );
+	s_time.setFillColor( sf::Color( 255 , 255 , 255 ) );
+	s_pause.setFillColor( sf::Color( 255 , 255 , 255 ) );
+	s_keys.setFillColor( sf::Color( 255 , 255 , 255 ) );
 	s_keys.setFont( f );
 	s_health.setFont( f );
 	s_lives.setFont( f );

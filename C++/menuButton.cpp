@@ -5,7 +5,7 @@ MenuButton::MenuButton()
 {
 	f.loadFromFile( "resource/materials/fonts/pixel.ttf" );
 	btnName.setFont( f );
-	btnName.setColor( sf::Color( 150 , 150 , 255 ) );
+	btnName.setFillColor( sf::Color( 150 , 150 , 255 ) );
 	btnName.setCharacterSize( 24 );
 	btnImg.loadFromFile( "resource/materials/gui/btn_main.png" );
 	btnImg.createMaskFromColor( sf::Color ( 0 , 255 , 0 ) );
@@ -23,7 +23,7 @@ MenuButton::MenuButton( std::string d )
 	f.loadFromFile( "resource/materials/fonts/segoeui.ttf" );
 	btnName.setString( d );
 	btnName.setFont( f );
-	btnName.setColor( sf::Color( 0 , 0 , 200 ) );
+	btnName.setFillColor( sf::Color( 0 , 0 , 200 ) );
 	btnName.setCharacterSize( 24 );
 	btnImg.loadFromFile( "resource/materials/gui/btn_main.png" );
 	btnImg.createMaskFromColor( sf::Color ( 0 , 255 , 0 ) );

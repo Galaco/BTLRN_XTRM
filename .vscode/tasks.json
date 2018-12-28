@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build beetle_run",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g", 
+                "C++/*.cpp",
+                "-obtlrn.out",
+                "-Iinclude",
+                "-lsfml-graphics", 
+                "-lsfml-window", 
+                "-lsfml-system", 
+                "-lsfml-audio",
+                "-framework", "OpenGL"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

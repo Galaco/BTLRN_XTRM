@@ -1,4 +1,4 @@
-#include "Beetle.h"
+#include "beetle.h"
 
 
 Beetle::Beetle(){
@@ -88,7 +88,7 @@ void Beetle::reverseDir(){
 
 
 void Beetle::checkPlayerVis( float px , float py ){
-	if( ( py < posX && dir == 0 ) || ( py > posX && dir == 1 ) )
+	if( ( py < posX && dir == 0 ) || ( py > posX && dir == 1 ) ) {
 		if( ( py >= posY-4 ) && ( py <= posY+sizeY ) )
 		{
 			if( boost == false ) velocity = velocity * 3;
@@ -97,4 +97,5 @@ void Beetle::checkPlayerVis( float px , float py ){
 			if ( boost == true ) velocity = velocity / 3;
 			boost = false;
 		}
+	}
 }

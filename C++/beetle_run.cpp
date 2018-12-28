@@ -3,6 +3,10 @@
 #include <iostream>
 #include "game.h"
 #include "settings.h"
+#ifdef __APPLE__
+	#include <OpenGL/glu.h>
+	#include <OpenGL/gl.h>
+#endif
 
 using namespace std;
 
@@ -15,8 +19,8 @@ int main()
 	unsigned int width = settings.getWidth();		// Prepare window width
 	unsigned int height = settings.getHeight();	// Prepare window height
 	sf::ContextSettings cs;
-	cs.majorVersion = 3;
-	cs.minorVersion = 2;
+	cs.majorVersion = 2;
+	cs.minorVersion = 1;
 	cs.depthBits = 24;
 	cs.stencilBits = 8;
 	cs.antialiasingLevel = settings.getAA();

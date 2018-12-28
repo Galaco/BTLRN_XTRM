@@ -3,7 +3,7 @@
 
 InputName::InputName(){
 	f.loadFromFile("resource/materials/fonts/pixel.ttf" );
-	char1.setColor( sf::Color( 255 , 255 , 255 ) );
+	char1.setFillColor( sf::Color( 255 , 255 , 255 ) );
 	char1.setCharacterSize( 160 );
 	char1.setPosition( 160 , 256 );
 	char1.setFont( f );

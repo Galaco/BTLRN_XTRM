@@ -10,7 +10,7 @@ WorldSpawn::WorldSpawn(){
 	t_ctrl.loadFromImage( i_ctrl );
 	s_ctrl.setTexture( t_ctrl );
 	s_ready.setString( "Press Spacebar to Play" );
-	s_ready.setColor( sf::Color( 0 , 0 , 0 ) );
+	s_ready.setFillColor( sf::Color( 0 , 0 , 0 ) );
 	s_jewel = false;
 	s_lvl.setPosition( 0 , 0 );	
 	s_ready.setPosition( 100 , 500 );

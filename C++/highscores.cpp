@@ -56,9 +56,9 @@ Highscore::Highscore(){
 		s_name[i].setString( initials[i] );
 		s_time[i].setString( time[i] );
 
-		s_name[i].setColor( sf::Color( 224 , 224 , 224 ) );
-		s_time[i].setColor( sf::Color( 224 , 224 , 224 ) );
-		s_life[i].setColor( sf::Color( 224 , 224 , 224 ) );
+		s_name[i].setFillColor( sf::Color( 224 , 224 , 224 ) );
+		s_time[i].setFillColor( sf::Color( 224 , 224 , 224 ) );
+		s_life[i].setFillColor( sf::Color( 224 , 224 , 224 ) );
 		s_life[i].setPosition( 300 , 140+ (i+1)*40.f );
 		s_name[i].setPosition( 112 , 140+ (i+1)*40.f );
 		s_time[i].setPosition( 440 , 140+ (i+1)*40.f );
